@@ -40,8 +40,12 @@
 }
 
 /* Tufte CSS styles */
+:root {
+	--fontScale: 0.94;
+}
+
 html {
-	font-size: 15px;
+	font-size: calc(var(--fontScale)*100%);
 	font-kerning: auto;
 	hyphens: auto;
 	kerning: auto;
@@ -505,6 +509,92 @@ label.margin-toggle:not(.sidenote-number) {
 		width: 100%;
 	}
 }
+
+/* font-size scaling = 1/sqrt(810/device-width) */
+@media (max-width: 810px) {
+	:root {
+		font-size: calc(var(--fontScale)*100%);
+	}
+}
+
+@media (max-width: 768px) {
+	:root {
+		font-size: calc(var(--fontScale)*97.3%);
+	}
+}
+
+@media (max-width: 720px) {
+	:root {
+		font-size: calc(var(--fontScale)*94.3%);
+	}
+}
+
+@media (max-width: 601px) {
+	:root {
+		font-size: calc(var(--fontScale)*86.1%);
+	}
+}
+
+@media (max-width: 576px) {
+	:root {
+		font-size: calc(var(--fontScale)*84.3%);
+	}
+}
+
+@media (max-width: 540px) {
+	:root {
+		font-size: calc(var(--fontScale)*81.6%);
+	}
+}
+
+@media (max-width: 512px) {
+	:root {
+		font-size: calc(var(--fontScale)*79.5%);
+	}
+}
+
+@media (max-width: 480px) {
+	:root {
+		font-size: calc(var(--fontScale)*77%);
+	}
+}
+
+@media (max-width: 428px) {
+	:root {
+		font-size: calc(var(--fontScale)*72.7%);
+	}
+}
+
+@media (max-width: 414px) {
+	:root {
+		font-size: calc(var(--fontScale)*71.5%);
+	}
+}
+
+@media (max-width: 390px) {
+	:root {
+		font-size: calc(var(--fontScale)*69.4%);
+	}
+}
+
+@media (max-width: 375px) {
+	:root {
+		font-size: calc(var(--fontScale)*68%);
+	}
+}
+
+@media (max-width: 360px) {
+	:root {
+		font-size: calc(var(--fontScale)*66.7%);
+	}
+}
+
+@media (max-width: 320px) {
+	:root {
+		font-size: calc(var(--fontScale)*62.9%);
+	}
+}
+
 @media print {
 	:root {
 		font-size: 10pt;
