@@ -439,7 +439,7 @@ label.margin-toggle:not(.sidenote-number) {
 	:root {
 		font-size: calc(var(--fontScale)*88.8%);
 	}
-	
+
 	body {
 		width: 84%;
 		padding-left: 8%;
@@ -607,14 +607,17 @@ label.margin-toggle:not(.sidenote-number) {
 	:root {
 		font-size: 10pt;
 	}
+
 	body {
 		padding-left: 0;
 		background: none;
 		max-width: 100vw;
 	}
+
 	@page {
 		margin: 10vmin;
 	}
+
 	html,
 	body,
 	header,
@@ -623,12 +626,15 @@ label.margin-toggle:not(.sidenote-number) {
 	article {
 		width: 100%;
 	}
+
 	article {
 		padding-top: 2rem;
 	}
+
 	section > p {
 		min-width: 62% !important;
 	}
+
 	pre > code,
 	pre.fullwidth > code {
 		min-width: 62%;
@@ -638,19 +644,24 @@ label.margin-toggle:not(.sidenote-number) {
 		word-break: break-all;
 		margin-left: 0;
 	}
+
 	a::after {
 		content: ' ('attr(href)')';
 	}
+
 	body h1:first-of-type {
 		margin-top: 0;
 	}
+
 	h1,
 	section > h1, {
 		page-break-before: always;
 	}
+
 	header > h1 {
 		page-break-before: avoid !important;
 	}
+
 	h1,
 	h2,
 	h3,
@@ -659,6 +670,7 @@ label.margin-toggle:not(.sidenote-number) {
 	h6 {
 		page-break-after: avoid;
 	}
+
 	table,
 	img,
 	svg,
