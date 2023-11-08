@@ -42,6 +42,10 @@
 /* Tufte CSS styles */
 :root {
 	--fontScale: 0.94;
+	--rmosf: 'et-book-roman-old-style';
+	--rmfamily: 'et-book', Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	--sffamily: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	--ttfamily: Consolas, "Liberation Mono", Menlo, Courier, monospace;
 }
 
 html {
@@ -60,7 +64,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 12.5%;
-	font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+	font-family: var(--rmfamily);
 	background-color: #fffff8;
 	color: #111;
 	max-width: 1400px;
@@ -121,7 +125,7 @@ p.subtitle {
 }
 
 .numeral {
-	font-family: et-book-roman-old-style;
+	font-family: var(--rmosf);
 }
 
 .danger {
@@ -319,7 +323,7 @@ img {
 
 .sidenote-number:after,
 .sidenote:before {
-	font-family: et-book-roman-old-style;
+	font-family: var(--rmosf);
 	position: relative;
 	vertical-align: baseline;
 }
@@ -351,16 +355,16 @@ table.fullwidth {
 
 div.table-wrapper {
 	overflow-x: auto;
-	font-family: "Trebuchet MS", "Gill Sans", "Gill Sans MT", sans-serif;
+	font-family: "Trebuchet MS", var(--sffamily);
 }
 
 .sans {
-	font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+	font-family: var(--sffamily);
 	letter-spacing: .03em;
 }
 
 code, pre > code {
-	font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+	font-family: var(--ttfamily);
 	font-size: 1.0rem;
 	line-height: 1.42;
 	-webkit-text-size-adjust: 100%; /* Prevent adjustments of font size after orientation changes in iOS. See https://github.com/edwardtufte/tufte-css/issues/81#issuecomment-261953409 */
