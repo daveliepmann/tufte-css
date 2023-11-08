@@ -42,6 +42,13 @@
 /* Tufte CSS styles */
 html {
 	font-size: 15px;
+	font-kerning: auto;
+	hyphens: auto;
+	kerning: auto;
+	-webkit-font-feature-settings: "kern" 1;
+	-moz-font-feature-settings: "kern" 1;
+	font-feature-settings: "kern" 1;
+	text-rendering: optimizeLegibility;
 }
 
 body {
@@ -184,6 +191,20 @@ section > p,
 section > footer,
 section > table {
 	width: 55%;
+}
+
+section > p:not(:first-of-type) {
+	text-indent: 2rem;
+}
+
+h1 + p,
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p,
+p * {
+	text-indent: 0;
 }
 
 /* 50 + 5 == 55, to be the same width as paragraph */
