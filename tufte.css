@@ -435,7 +435,11 @@ label.margin-toggle:not(.sidenote-number) {
 	height: 100%;
 }
 
-@media (max-width: 760px) {
+@media only screen and (max-width: 640px) {
+	:root {
+		font-size: calc(var(--fontScale)*88.8%);
+	}
+	
 	body {
 		width: 84%;
 		padding-left: 8%;
