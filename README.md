@@ -70,7 +70,7 @@ Contributors
 -
  - Dave Liepmann (creator, project maintainer, design)
  - Edward Tufte (editing, direction, design)
- - [Adam Schwartz](https://github.com/adamschwartz) (ET Book font, descender-clearing link underlines)
+ - [Adam Schwartz](https://github.com/adamschwartz) (ET Book font)
  - [Clay Harmon](https://github.com/edwardtufte/tufte-css/commits/master?author=clayh53) (media queries, rem units)
  - [Linjie Ding](https://github.com/edwardtufte/tufte-css/commits/master?author=pyrocat101) (italic typeface)
  - [Stephen A Thomas](https://github.com/edwardtufte/tufte-css/commits/master?author=sathomas) (automagically numbered sidenotes)
